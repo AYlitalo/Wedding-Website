@@ -1,126 +1,195 @@
 @font-face {
-    font-family: 'Le Murmure';
+    font-family: 'Le_Murmure';
     src: url('fonts/LeMurmure-Regular.woff2');
     font-weight: normal;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Sporting_Grotesque';
     src: url('fonts/Sporting_Grotesque-Regular_web.otf');
     font-weight: normal;
     font-style: normal;
-}
-
+  }
 
 html {
-  background-color: #FCF8F0;
-  color: #49001C;
-  background-image: url("images/flowers1.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: 0;
+  background-color: #2F0312;
 }
 
 body {
   margin: 0;
-  height: 85vh;
-
-  animation: fadeInAnimation ease .5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  background-color: #2F0312;
 }
 
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-   }
-
-.home-page-header-logo {
-  padding-left: 60px;
-  padding-top: 60px;
-}
-
-  .home-page-header-logo-image {
-    height: 40px;
-  }
-
-.homepage-content {
-  position: relative;
-  height: 100%;
-  padding-left: 60px;
-  font-family: 'Le Murmure';
-}
-
-  .homepage-content-items{
-  position: absolute;
-  top: 50%;
-   transform: translate(0, -55%);
-  }
-
-  .nick-alaina-names {
-    display: flex;
-    align-items: center;
-  }
-
-  .ampersand1 {
-    height: 6rem;
-  padding: 0px 10px 30px 10px;
-  }
-
-    .homepage-content-nickalaina {
-      font-size: 14rem;
-      margin: 0;
-      line-height: 1;
-    }
-
-    .homepage-content-details {
-      font-family: 'Sporting_Grotesque';
-      margin: 0;
-      color: #240310;
-      font-weight: normal;
-    }
-
-.homepage-nav {
-  margin-top: 20px;
-}
-
-  .homepage-nav a{
-    font-family: 'Sporting_Grotesque';
-    margin: 0;
-    color: #49001C;
-  }
-
-    .homepage-nav a:hover {
-      color: black;
-      font-style: italic;
-    }
-
-footer {
+.page-navigation{
+  background-color: #FBF8F1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #49001C;
-  color: #FCF8F0;
-  position: fixed;
-  bottom: 0px;
-  line-height: 1;
-  width: 100%;
-  padding: 20px;
-  font-family: 'Sporting_Grotesque';
+  padding: 0px;
+  font-family: Poppins;
+  font-weight: normal;
 }
 
-footer p {
-  padding: 0px 10px 0px 10px;
+  .page-navigation a {
+    text-decoration: none;
+    color: #2F0312;
+    margin: 12px;
+  }
+
+  .page-navigation a:hover {
+    font-style: italic;
+  }
+
+.red-background {
+  background-color: #2F0312;
+  background-image: url(images/background-homepage.png);
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+.page-content {
+  padding: 100px 0px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.nick-and-alaina-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.getting-married {
+  font-family: Sporting_Grotesque;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.homepage-details {
+}
+
+.wedding-details {
+    font-family: Poppins;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+  .getting-married, .wedding-details {
+    text-align: center;
+    color: #FBF8F1;
+  }
+
+.homepage-buttons {
+  margin-top: 32px;
+}
+
+.homepage-buttons a {
+  background-color: transparent;
+  border: 1px #FBF8F1 solid;
+  color: #FBF8F1;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 8px;
+  font-family: Poppins;
+  font-weight: normal;
+}
+
+.homepage-buttons a:hover {
+  transition: .3s;
+  background-color: #FBF8F1;
+  border: 1px #FBF8F1 solid;
+  color: #2F0312;
+}
+
+
+
+.green-background {
+  background-color: #072B2E;
+  background-image: url(images/background-homepage.png);
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+
+.page-header {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header-title {
+  font-family: Le_Murmure;
+  color: #FBF8F1;
+  font-size: 12rem;
   margin: 0;
+  padding: 0;
+  text-align: center;
+
 }
 
-.starburst-light-small {
-  height: 15px;
-  padding-bottom: 4px;
+.mini-header {
+  text-align: center;
+  color: #FBF8F1;
+  font-family: Sporting_Grotesque;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-page-info-section {
+  max-width: 750px;
+  justify-content: center;
+  text-align: center;
+  color: #FBF8F1;
+  font-family: Poppins;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 24px;
+}
+
+.info-button a{
+  background-color: transparent;
+  border: 1px #FBF8F1 solid;
+  color: #FBF8F1;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 8px;
+  font-family: Poppins;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-button a:hover {
+  transition: .3s;
+  background-color: #FBF8F1;
+  border: 1px #FBF8F1 solid;
+  color: #2F0312;
+}
+
+
+.rule {
+  background-color: white;
+  height: 1px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
