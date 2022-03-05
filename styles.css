@@ -22,6 +22,14 @@ body {
   background-color: #2F0312;
 }
 
+a {
+  color: white;
+}
+
+.index-header {
+  display: none;
+}
+
 .page-navigation{
   background-color: #FBF8F1;
   display: flex;
@@ -192,4 +200,34 @@ body {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.hotels {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-header-title {
+    font-size: 6rem;
+  }
+
+  .green-background, .red-background {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nick-and-alaina-logo {
+    display: none;
+  }
+
+  .index-header {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav-icon {
+    display: none;
+  }
 }
